@@ -1,0 +1,52 @@
+.header {
+    background-image: url(../img/noticia-completa_a-forja.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 123vh;
+
+    &__container {
+        background-color: rgba(0, 0, 0, 0.582);
+        padding: 16px;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    .container__content {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            color: #fff;
+            font-size: 42px;
+        }
+
+        .navbar {
+
+            &__list {
+                &__item {
+                    display: inline;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 18px;
+                        background-color: black;
+                        padding: 12px;
+                        border-radius: 8px;
+                        font-weight: bold;
+                        transition: all ease .5s;
+
+                        &:hover {
+                            background-color: #ffffff9e;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

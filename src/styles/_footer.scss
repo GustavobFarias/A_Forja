@@ -1,0 +1,65 @@
+.footer {
+    background-color: rgb(25, 23, 23);
+    padding-top: 80px;
+
+    &__container {
+        max-width: 1024px;
+            width: 100%;
+            margin: 0 auto;
+
+            p {
+                text-align: center;
+                color: #fff;
+                margin-top: 32px;
+                font-size: 18px;
+            }
+        
+        &__content{ 
+            display: flex;
+            
+            &__links {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 8px;
+        
+                a {
+                    color: #ccc;
+                    text-decoration: none;
+                    margin-right: 16px;
+                    font-size: 14px;
+        
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+    
+                &__linguagens {
+                    display: flex;
+                    
+                    .logo-pais {
+                        height: 20px;
+                    }
+        
+                    select {
+                        background-color: transparent;
+                        color: #ccc ;
+                        padding: 8px;
+                        border: none;
+                        border-radius: 8px;
+                        cursor: pointer;
+        
+                        &:hover {
+                            color: #fff;
+                        }
+        
+                        option {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

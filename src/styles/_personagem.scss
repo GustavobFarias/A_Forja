@@ -1,0 +1,46 @@
+#personagens {
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        &__content {
+            h2 {
+                padding-top: 62px;
+                margin-bottom: 16px;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding-left: 40px;
+
+                li {
+                    max-width: 200px;
+
+                    .img {
+                        width: 200px;
+                    }
+
+                    img {
+                        height: 200px;
+                        border-radius: 16px;
+                        transition: all ease .5s;
+
+                        &:hover {
+                            transform: translateY(-10px);
+                        }
+                    }
+                    
+                    p {
+                        text-align: center;
+                        color: #fff;
+                        margin-bottom: 16px;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
