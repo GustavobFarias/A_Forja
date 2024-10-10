@@ -1,8 +1,15 @@
 #personagens {
+    padding-top: 32px;
     .container {
         max-width: 1024px;
         width: 100%;
         margin: 0 auto;
+
+        @media (max-width:640px) {
+            max-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+        }
 
         &__content {
             h2 {
@@ -14,6 +21,14 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 padding-left: 40px;
+
+                @media (max-width: 768px) {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+
+                @media (max-width: 640px) {
+                    grid-template-columns: 1fr;
+                }
 
                 li {
                     max-width: 200px;
@@ -38,6 +53,15 @@
                         margin-bottom: 16px;
                         font-size: 20px;
                         font-weight: bold;
+                    }
+
+                    @media (max-width:640px) {
+                        .img {
+                            width: 250px;
+                        }
+                        img {
+                            height: 250px;
+                        }
                     }
                 }
             }

@@ -1,10 +1,32 @@
 #trailer {
     background-color: rgb(25, 23, 23);
+    padding-top: 16px;
 
     .container {
         max-width: 1300px;
         width: 100%;
         margin: 0 auto;
+
+        @media (max-width: 768px) {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+
+            iframe {
+                height: 400px;
+                padding-bottom: 62px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            max-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+
+            iframe {
+                height: 400px;
+            }
+        }
 
         h2 {
             padding-top: 62px;

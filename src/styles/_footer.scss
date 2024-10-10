@@ -7,11 +7,24 @@
             width: 100%;
             margin: 0 auto;
 
+            @media (max-width: 640px) {
+                max-width: 360px;
+                width: 100%;
+            }
+
             p {
                 text-align: center;
                 color: #fff;
                 margin-top: 32px;
                 font-size: 18px;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 640px) {
+                    font-size: 12px;
+                }
             }
         
         &__content{ 
@@ -29,6 +42,10 @@
                     text-decoration: none;
                     margin-right: 16px;
                     font-size: 14px;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
         
                     &:hover {
                         color: #fff;
@@ -58,6 +75,13 @@
                             color: black;
                         }
                     }
+                }
+            }
+
+            @media (max-width: 640px) {
+                &__links {
+                    margin-right: 20px;
+                    margin-bottom: 16px;
                 }
             }
         }

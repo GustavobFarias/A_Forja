@@ -1,0 +1,14 @@
+.hero {
+    background-image: url(../img/noticia-completa_a-forja.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 123vh;
+
+        @media (max-width: 640px) {
+            height: 32vh;
+        }
+
+        @media (max-width: 768px) {
+            height: 42.6vh;
+        }
+}
